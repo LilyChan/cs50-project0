@@ -1,9 +1,77 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Webpage</title>
+    <title>Lily's Webpage</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' href='default.css'>
 </head>
 <body>
-Hello, world!
+    <div class="container">
+        <div class="row">
+            <header>
+                <span class="site-name"><a href="index.html">Lily</a></span>
+                <nav class="menu">
+                    <ul class="nav justify-content-start">
+                        <li class="nav-item">
+                          <a class="nav-link active" href="index.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="portfolio.html">Work Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dance.html">Dance</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cources.html">Online Cources</a>
+                        </li>
+                    </ul>
+                  </nav>
+            </header>
+        </div>
+        <div class="site-body">
+            <section id='about' class="row align-items-center justify-content-center">
+                <div class="col-12 col-sm-4 text-center">
+                    <img id="profile-img" src="images/hsin-yi-chan.png" class="img-fluid img-thumbnail mr-3" alt="lily's profile image with black business suit">
+                </div>
+                <div class="col-12 col-sm-8">
+                    <h5>Personal Summary</h5>
+                    <p>I’m a self-motivated, bilingual full stack developer with more than 3 years of programming experience, 
+                        specializing in web development with a keen interest in big data.
+                    </p>
+                    <h5>Education</h5>
+                    <ul>
+                        <li class="highlight-li">Overseas Exchange Program for 1 semester - Western Sydney University<br>
+                            <small>Computing, Engineering and Mathematics, 2013</small></li>
+                        <li>Master of Business Administration - National Central University <br>
+                            <small>Major in Information Management, 2010 - 2013</small></li>
+                        <li>Bachelor of Business Administration - National Central University <br>
+                            <small>Major in Information Management, 2006 - 2010</small></li>
+                    </ul> 
+                </div>
+            </section>
+            <section id='experience'>
+                <h5>Work Experience</h5>
+                <ul>
+                    <li class="highlight-li">Full Stack Developer - Veden Dental Group, Taiwan, 2016/03/01-Present
+                        <p>Built and maintained Customer Service Platform and various internal web systems to manage dental production. <br>
+                        Contributed to system development lifecycle activities, including analysis and design, development, integration, testing, deployment, user training, and maintenance.</p>
+                    </li>
+                    <li>Web developer - AZ Multimedia Pty Ltd, Australia, 2014/01-2015/12
+                        <p>Developed news aggregation function, updated and maintained Joomla website: ozdaily.net.</p>
+                    </li>
+                    <li>Receptionist - Grand Realty Pty Ltd, Australia, 2014/11-2015/09
+                        <p>Answered phone calls, performed administrative tasks, maintained company’s website and online listing, assisted with property sales and management.</p>
+                    </li>
+                </ul>
+            </section>
+            <section id='contact'>
+                <h5>Contact Information</h5>
+                <ul>
+                    <li>Email: Adriana.lily.jane@gmail.com</li>
+                    <li>Phone: +886-986-282-543</li>
+                </ul>
+            </section>
+        </div>
+    </div>
 </body>
 </html>
