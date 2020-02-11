@@ -43,7 +43,7 @@ header {
   list-style-type: none;
 }
 
-li, .highlight-li {
+ul li, ul .highlight-li {
   list-style-type: circle;
 }
 
