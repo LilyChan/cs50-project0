@@ -22,6 +22,15 @@ header {
 
 .site-body {
   margin-top: 90px;
+  padding: 0 1rem;
+}
+
+section {
+  margin: 15px 0;
+}
+
+ul li, ul .highlight-li {
+  list-style-type: circle;
 }
 
 .site-name a {
@@ -43,16 +52,8 @@ header {
   list-style-type: none;
 }
 
-ul li, ul .highlight-li {
-  list-style-type: circle;
-}
-
 .highlight-li {
   background-color: #cee2e2;
-}
-
-section {
-  margin: 15px 0;
 }
 
 #profile-img {
@@ -89,8 +90,8 @@ section {
   flex-wrap: wrap;
 }
 .cources .card {
-  margin: 0 1rem 1rem 1rem;
-  width: 240px;
+  margin: 0 0.5em 0.5rem 0.5rem;
+  width: 250px;
 }
 .cources .card img {
   width: 100%;
