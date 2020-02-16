@@ -1,7 +1,5 @@
 $site-color: darkslategray;
 $site-font-color:  rgb(245, 240, 240);
-$site-header-height: 90px;
-$m__site-header-height: 120px;
 
 html{
     scroll-behavior: smooth;
@@ -13,7 +11,7 @@ body{
 }
 
 header{
-    position: fixed;
+    position: sticky;
     top:0;
     z-index: 1;
     display: flex;
@@ -26,7 +24,6 @@ header{
 }
 
 .site-body{
-    margin-top: $site-header-height;
     padding: 0 1rem;
 }
 
@@ -34,8 +31,17 @@ section{
     margin: 15px 0;
 }
 
-ul li{
+.li-circle{
     list-style-type: circle;
+}
+
+.li-circle-highlight{
+    @extend .li-circle;
+    background-color: lighten($color: $site-color, $amount: 60%);
+}
+
+ul li{
+    @extend .li-circle;
 }
 
 .site-name a{
@@ -55,11 +61,6 @@ ul li{
 
 .menu ul li{
     list-style-type: none;
-}
-
-.highlight-li{
-    @extend li;
-    background-color: lighten($color: $site-color, $amount: 60%);
 }
 
 #profile-img{
@@ -105,9 +106,6 @@ ul li{
 }
 
 @media (max-width: 768px){
-    .site-body{
-        margin-top: $m__site-header-height;
-    }
     .screenshots{
         display: none;
     }

@@ -8,7 +8,7 @@ body {
 }
 
 header {
-  position: fixed;
+  position: sticky;
   top: 0;
   z-index: 1;
   display: flex;
@@ -21,7 +21,6 @@ header {
 }
 
 .site-body {
-  margin-top: 90px;
   padding: 0 1rem;
 }
 
@@ -29,8 +28,12 @@ section {
   margin: 15px 0;
 }
 
-ul li, ul .highlight-li {
+.li-circle, ul li, .li-circle-highlight {
   list-style-type: circle;
+}
+
+.li-circle-highlight {
+  background-color: #cee2e2;
 }
 
 .site-name a {
@@ -48,12 +51,8 @@ ul li, ul .highlight-li {
   font-weight: 500;
 }
 
-.menu ul li, .menu ul .highlight-li {
+.menu ul li {
   list-style-type: none;
-}
-
-.highlight-li {
-  background-color: #cee2e2;
 }
 
 #profile-img {
@@ -99,10 +98,6 @@ ul li, ul .highlight-li {
 }
 
 @media (max-width: 768px) {
-  .site-body {
-    margin-top: 120px;
-  }
-
   .screenshots {
     display: none;
   }
