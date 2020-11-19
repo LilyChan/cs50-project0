@@ -1,5 +1,7 @@
 # LilyChan
 
+walk-through video: https://youtu.be/KlzvmaMTRps
+
 This personal webpage project about me(project0) contains four different pages and a fixed navigation bar at the top:
 
 * index.htm  
